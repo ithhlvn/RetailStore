@@ -18,6 +18,6 @@ public class CustomerGreetingController {
 
         return Greeting.builder()
                 .id(counter.incrementAndGet())
-                .Content(String.format(greetingTemplate, genger ? "Mr." : "Ms.", customerName)).build();
+                .Content(String.format(greetingTemplate, gender ? "Mr." : "Ms.", customerName)).build();
     }
 }
